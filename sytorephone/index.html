@@ -1,0 +1,37 @@
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Store Phone - Eletrônicos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>STORE PHONE</h1>
+</header>
+
+<nav>
+    <a href="javascript:void(0)" onclick="mostrarPagina('produtos')">Produtos</a>
+    <a href="javascript:void(0)" onclick="mostrarPagina('carrinho')">
+        Carrinho (<span id="contador">0</span>)
+    </a>
+</nav>
+
+<section id="produtos" class="pagina ativa">
+    <h2>Eletrônicos disponíveis</h2>
+    <div class="grid" id="lista-produtos"></div>
+</section>
+
+<section id="carrinho" class="pagina">
+    <h2>Seu Carrinho</h2>
+    <div id="itens-carrinho"></div>
+    <h3 id="total">Total: R$ 0</h3>
+    <button id="pagarBtn" onclick="pagar()">Finalizar Compra</button>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
